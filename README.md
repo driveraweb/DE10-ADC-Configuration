@@ -26,11 +26,61 @@ This section describes the process of configuring the ADC core control module an
 
 ### Configuring the soft-IP
 * Open Qsys or Platform Designer
-* In the IP Catalog search bar, search for Altera Modular ADC core
-![IP Catalog Search Image](https://github.com/driveraweb/DE10-ADC/Images/ip_search_adc)
-* Double-click it to open the configuration window. Configure it as follows
-![ADC Configuration](https://github.com/driveraweb/DE10-ADC/Images/config_adc)
 
+#### Adding the ADC core
+* In the IP Catalog search bar, search for Altera Modular ADC core  
+![IP Catalog Search Image](Images/ip_search_adc.PNG "IP Catalog Search")
+* Double-click it to open the configuration window. Configure it as follows  
+![ADC Configuration](Images/config_adc.PNG "ADC Configuration")
+* Click Finish
+You should now see it in the System Contents tab.
+* On the "command" row, export by double-clicking where it says "Double-click to export
+* On the "response" row, export by double-clicking where it says "Double-click to export
+There should now be names assigned in the Export column.
+
+
+#### Adding the PLL
+* In the IP Catalog search bar, search for Avalon ALTPLL 
+![IP Catalog Search Image](Images/ip_search_pll.PNG "IP Catalog Search")
+* Double-click it to open the configuration window. Configure it as follows  
+![PLL Configuration](Images/config_pll1.PNG "PLLin Configuration")
+![PLL Configuration](Images/config_pll2.PNG "PLLout0 Configuration")
+![PLL Configuration](Images/config_pll3.PNG "PLLout1 Configuration")
+* Click Finish
+You should now see it in the System Contents tab.
+
+#### Adding Reset Controllers
+* In the IP Catalog search bar, search for Reset Controller 
+![IP Catalog Search Image](Images/ip_search_rst.PNG "IP Catalog Search")
+* Double-click it to open the configuration window. Configure it as follows  
+![PLL Configuration](Images/config_rst.PNG "Resset Configuration")
+* Click Finish
+You should now see it in the System Contents tab.
+* Repeat the last three steps to add another reset controller
+
+#### Adding a Clock Bridge for the System
+* In the IP Catalog search bar, search for Clock Bridge
+![IP Catalog Search Image](Images/ip_search_clk.PNG "IP Catalog Search")
+* Double-click it to open the configuration window
+* Click Finish
+You should now see it in the System Contents tab.
+* On the "out_clk" row, export by double-clicking where it says "Double-click to export
+There should now be a name assigned in the Export column.
+
+#### Interconnect the devices
+* By clicking nodes in the connections tab, make the following connections
+(If you accidentally click a node for an exported pin, you will have to re-export by double-clicking as before)
+![Interconnections](Images/intercon.PNG "Interconnections")
+
+#### Save the Qsys file if you want to modify it later
+
+#### Generate HDL 
+* Click the Generate HDL Button at the bottom of the Qsys window
+* Click Generate on the popup window
+* Close the Qsys tool. You will see the following message
+![Message](Images/msg.PNG "Message")
+
+#### Add the .qip file to the project
 
 
 
