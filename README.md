@@ -68,7 +68,7 @@ You should now see it in the System Contents tab.
 There should now be a name assigned in the Export column.
 
 #### Interconnect the devices
-* By clicking nodes in the connections tab, make the following connections
+* By clicking nodes in the connections column of the Systom Contents tab, make the following connections
 (If you accidentally click a node for an exported pin, you will have to re-export by double-clicking as before)
 ![Interconnections](Images/intercon.PNG "Interconnections")
 
