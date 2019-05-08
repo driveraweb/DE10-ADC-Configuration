@@ -27,9 +27,9 @@ This section describes the process of configuring the ADC core control module an
 ### Configuring the soft-IP
 * Open Qsys or Platform Designer
 * In the IP Catalog search bar, search for Altera Modular ADC core
-![IP Catalog Search Image](Images/ip_search_adc)
+![IP Catalog Search Image](https://github.com/driveraweb/DE10-ADC/Images/ip_search_adc)
 * Double-click it to open the configuration window. Configure it as follows
-![ADC Configuration](Images/config_adc)
+![ADC Configuration](https://github.com/driveraweb/DE10-ADC/Images/config_adc)
 
 
 
