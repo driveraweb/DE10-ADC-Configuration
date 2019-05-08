@@ -1,0 +1,55 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate H:\adc_scratch\adc\adc.qsys --block-symbol-file --output-directory=H:\adc_scratch\adc\adc --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading adc/adc.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 16.0]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 16.0]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 16.0]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding reset_controller_0 [altera_reset_controller 16.0]
+Progress: Parameterizing module reset_controller_0
+Progress: Adding reset_controller_1 [altera_reset_controller 16.0]
+Progress: Parameterizing module reset_controller_1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: adc.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: adc.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate H:\adc_scratch\adc\adc.qsys --synthesis=VERILOG --output-directory=H:\adc_scratch\adc\adc\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading adc/adc.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 16.0]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 16.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 16.0]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 16.0]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding reset_controller_0 [altera_reset_controller 16.0]
+Progress: Parameterizing module reset_controller_0
+Progress: Adding reset_controller_1 [altera_reset_controller 16.0]
+Progress: Parameterizing module reset_controller_1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: adc.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: adc.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: adc: Generating adc "adc" for QUARTUS_SYNTH
+Info: altpll_0: "adc" instantiated altpll "altpll_0"
+Info: modular_adc_0: "adc" instantiated altera_modular_adc "modular_adc_0"
+Info: reset_controller_0: "adc" instantiated altera_reset_controller "reset_controller_0"
+Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: adc: Done "adc" with 5 modules, 13 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
