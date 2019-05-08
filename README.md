@@ -24,9 +24,17 @@ The 12 ADC bit values are displayed in hexidecimal format on the HEX3, HEX2, and
 
 This section describes the process of configuring the ADC core control module and necessary PLL.
 
+### Configuring the soft-IP
+* Open Qsys or Platform Designer
+* In the IP Catalog search bar, search for Altera Modular ADC core
+![IP Catalog Search Image](Images/ip_search_adc)
+* Double-click it to open the configuration window. Configure it as follows
+![ADC Configuration](Images/config_adc)
 
 
-### Interfacing with the ADC
+
+
+## Interfacing with the ADC
 
 The ADC interface is I2C, but this project uses a wrapper based on the ADC controller synthesis. The source Verilog is the top-level entitiy of the Quartus project (see adc_2M.v). This is a modified version of the ADC_RTL Template that can be downloaded from Terasic's website.
 
